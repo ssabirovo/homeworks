@@ -1,0 +1,17 @@
+.hexes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+
+  .btn {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    transition: 0.1s linear transform;
+    outline: none;
+    border: none;
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}
