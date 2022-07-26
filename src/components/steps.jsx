@@ -1,22 +1,26 @@
 import { Component } from "react";
-import Counter from "./counter";
+import Step from "./step";
 
-class Counters extends Component {
+
+class Steps extends Component {
+  
+
+
   render() {
+    
     console.log(this.props);
     return (
       <>
-        <button onClick={this.props.onReset} className="btn btn-success">
-          Reset
-        </button>
         {this.props.stateCounter.map((item) => (
-          <Counter
+          <Step
+            plusNum={item.plus}
+            minusNum={item.minus}
             key={item.id}
             id={item.id}
             value={item.value}
             onIncrement={this.props.onIncrement}
             onDecrement={this.props.onDecrement}
-            onDelete={this.props.onDelete}
+            onStart={this.props.onStart}
           />
         ))}
       </>
@@ -24,4 +28,4 @@ class Counters extends Component {
   }
 }
 
-export default Counters;
+export default Steps;
