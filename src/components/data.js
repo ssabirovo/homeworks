@@ -14,7 +14,12 @@ const explorer = [
               {
                 name: "Abdulxoliq",
                 isFolder: false,
-                items: [],
+                // items: [],
+              },
+              {
+                name: "Muhiddin",
+                isFolder: false,
+                // items: [],
               },
             ],
           },
@@ -31,7 +36,7 @@ const explorer = [
               {
                 name: "Azizbek",
                 isFolder: false,
-                items: [],
+                // items: [],
               },
             ],
           },
@@ -50,7 +55,7 @@ const explorer = [
           {
             name: "Shohruxbek",
             isFolder: false,
-            items: [],
+            // items: [],
           },
         ],
       },
@@ -67,7 +72,7 @@ const explorer = [
           {
             name: "Alisher",
             isFolder: false,
-            items: [],
+            // items: [],
           },
         ],
       },

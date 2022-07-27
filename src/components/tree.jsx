@@ -14,18 +14,28 @@ class Tree extends Component {
     return (
       <>
         <span className="spancha" onClick={() => this.setExpand()}>
+          {explorer.items ? (
+            this.state.expand ? (
+              <i className="fa-solid fa-caret-down"></i>
+            ) : (
+              <i className="fa-solid fa-caret-right"></i>
+            )
+          ) : (
+            ""
+          )}
+
           {explorer.name}
         </span>
         <div
-          className="explore"
+          className="explore "
           style={{
             paddingLeft: "2rem",
             display: this.state.expand ? "flex" : "none",
           }}
         >
-          {explorer.items.map((explore) => (
-            <Tree explorer={explore} />
-          ))}
+          {explorer.items
+            ? explorer.items.map((explore) => <Tree explorer={explore} />)
+            : console.log("ended")}
         </div>
       </>
     );
