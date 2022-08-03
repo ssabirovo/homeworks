@@ -7,13 +7,12 @@
          ✅ tasbih app 👍🏻
          ✅ weather app
          ✅ calculate app 👍🏻
-         ✅ github issue page
+         ✅ github issue page 👍🏻
          ✅ dashboard app
          ✅ E-Commerce app
          ✅ Netlify clone app
 
-## 3️⃣ Create github issues page
+## 3️⃣ Create sidebar
 
-        ✅ [codesandbox](https://codesandbox.io/s/vigilant-spence-lz9bxh)
-        ✅ @faker-js/faker
+        ✅ figma -> https://bit.ly/3vEX8OF
         ✅ create components

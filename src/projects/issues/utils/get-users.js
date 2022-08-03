@@ -2,7 +2,7 @@ import { faker } from "@faker-js/faker";
 
 export const getIssues = (amount = 10) => {
   const issues = [];
-  for (let idx = 0; idx < 50; idx++) {
+  for (let idx = 0; idx < amount; idx++) {
     const newIssue = {
       id: faker.random.numeric(5),
       title: faker.random.words(6),
@@ -20,21 +20,25 @@ export const getIssues = (amount = 10) => {
           label: faker.random.words(2),
         },
         {
-          type: "status",
+          type: "type",
+          label: faker.random.words(2),
+        },
+        {
+          type: "type",
           label: faker.random.words(2),
         },
       ],
     };
     issues.push(newIssue);
   }
-
   console.log("issues = ", issues);
+  return issues;
 };
 
 const getUser = () => {
   return {
     id: faker.database.mongodbObjectId(),
-    username: faker.name.findName(),
+    username: faker.name.findName().toLowerCase(),
     avatarURL: faker.internet.avatar(),
     address: {
       city: faker.address.city(),
