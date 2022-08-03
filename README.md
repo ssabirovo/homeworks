@@ -12,10 +12,8 @@
          ✅ E-Commerce app
          ✅ Netlify clone app
 
-## URLS
+## 3️⃣ Create github issues page
 
-         ✅ [![React Lifecycle](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)]
-         ✅ [![Tasbih ui](https://steprimo.com/android/us/app/com.digital.zikar.tasbeeh.counting.app/Real-Tasbih-Count-Digital-Tasbeeh-Counter/)]
-         ✅ [![](link)]
-         ✅ [![](link)]
-         ✅ [![](link)]
+        ✅ [codesandbox](https://codesandbox.io/s/vigilant-spence-lz9bxh)
+        ✅ @faker-js/faker
+        ✅ create components
