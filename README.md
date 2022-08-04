@@ -14,8 +14,8 @@
 
 ## 3️⃣ Create E-Commerce App
 
-        ✅ figma -> https://bit.ly/3Q8gxA0
-        ✅ create base styles
-        ✅ create base fonts
+        ✅ figma -> https://bit.ly/3Q8gxA0  👍🏻
+        ✅ create base styles 👍🏻
+        ✅ create base fonts 👍🏻
         ✅ create components main logics
-        ✅ create products.json file & using products
+        ✅ create products.json file & using products 👍🏻

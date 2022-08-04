@@ -1,14 +1,12 @@
 import { Component } from "react";
-import { faker } from "@faker-js/faker";
+import products from "./products";
 
 class App extends Component {
+  state = {};
+
   render() {
-    return (
-      <div className='App'>
-        <h1>Hello CodeSandbox</h1>
-        <h2>Start editing to see some magic happen!</h2>
-      </div>
-    );
+    console.log("products = ", products);
+    return <div className='App'>Apple Watch</div>;
   }
 }
 
