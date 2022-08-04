@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { getIssues } from "./utils/get-users";
+import { getIssues } from "./utils/get-issues";
 import Issue from "./components/issue";
 
 class Issues extends Component {
