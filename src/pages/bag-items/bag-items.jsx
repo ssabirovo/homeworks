@@ -1,10 +1,10 @@
 import SideBar from "../../shared/sidebar/sidebar";
-import "./view.scss";
+import "./bag-items.scss";
 
-const View = ({ onPageChange, onLogOut }) => {
+const BagItems = ({ onPageChange, onLogOut }) => {
   return (
     <div>
-      <h1>View Page</h1>
+      <h1>BagItems Page</h1>
       <SideBar
         from='Bag Items'
         onPageChange={onPageChange}
@@ -14,4 +14,4 @@ const View = ({ onPageChange, onLogOut }) => {
   );
 };
 
-export default View;
+export default BagItems;

@@ -1,7 +1,12 @@
 import "./login.scss";
 
-const Login = () => {
-  return <h1>Login Page</h1>;
+const Login = ({ onLogin }) => {
+  return (
+    <div>
+      <h1>Login Page</h1>
+      <button onClick={onLogin}>Login</button>
+    </div>
+  );
 };
 
 export default Login;
