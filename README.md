@@ -4,18 +4,20 @@
 
 ## 2️⃣ Create simple projects
 
-         ✅ tasbih app 👍🏻
-         ✅ weather app
-         ✅ calculate app 👍🏻
-         ✅ github issue page 👍🏻
-         ✅ dashboard app 👍🏻
-         ✅ E-Commerce app 👍🏻
-         ✅ Netlify clone app
+        ✅ create fake getMovies without backend
+        ✅ create fake getGenres without backend
 
-## 3️⃣ Create E-Commerce App
+## 3️⃣ Implement sorting
 
-        ✅ figma -> https://bit.ly/3Q8gxA0  👍🏻
-        ✅ create base styles 👍🏻
-        ✅ create base fonts 👍🏻
-        ✅ create components main logics
-        ✅ create products.json file & using products 👍🏻
+         ✅ using _.orderBy
+
+## 4️⃣ Delete method with backend
+
+         ✅ create handleDelete method without backend
+         ✅ create loader component
+         ✅ using react-toastify
+
+## 5️⃣ Extracting table
+
+         ✅ create tableHeader component
+         ✅ create tableBody component

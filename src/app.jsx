@@ -6,8 +6,6 @@ import Loader from "./components/loader";
 import Total from "./components/total";
 import { paginate } from "./helpers/paginate";
 
-import "./assets/styles/base.scss";
-
 class App extends Component {
   state = {
     loading: true,
