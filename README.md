@@ -1,4 +1,4 @@
-# ---------- 04.08.22 ----------(132)
+# ---------- 08.08.22 ----------(133)
 
 ## 1️⃣ Checking homeworks
 
@@ -9,7 +9,7 @@
          ✅ calculate app 👍🏻
          ✅ github issue page 👍🏻
          ✅ dashboard app 👍🏻
-         ✅ E-Commerce app
+         ✅ E-Commerce app 👍🏻
          ✅ Netlify clone app
 
 ## 3️⃣ Create E-Commerce App
