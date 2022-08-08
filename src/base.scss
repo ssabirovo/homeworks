@@ -6,3 +6,9 @@
   font-family: -apple-system, "system-ui", "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
