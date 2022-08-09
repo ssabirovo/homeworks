@@ -1,12 +1,8 @@
 import { Component } from "react";
-import NavBar from "./components/nav-bar";
-import Genres from "./components/genres";
-import Movies from "./components/movies";
-import Loader from "./components/loader";
-import Total from "./components/total";
+import { Movies, NavBar, Genres, Loader, Total } from "./components";
 import { paginate } from "./helpers/paginate";
-import { fakeGetMovies } from "./services/fake-get-movies";
-import { fakeGetGenres } from "./services/fake-get-genres";
+import _ from "lodash";
+import { fakeGetGenres, fakeGetMovies } from "./services";
 import { toast } from "react-toastify";
 
 class App extends Component {
@@ -17,6 +13,10 @@ class App extends Component {
     genreID: "all",
     currentPage: 1,
     pageSize: 3,
+    columnSort: {
+      path: "title",
+      order: "asc",
+    },
   };
 
   handleSelectGenre = (newGenreID) => {
@@ -55,13 +55,16 @@ class App extends Component {
   render() {
     if (this.state.loading) return <Loader />;
 
-    const { movies, genres, genreID, pageSize, currentPage } = this.state;
+    const { movies, genres, genreID, pageSize, currentPage, columnSort } =
+      this.state;
 
     const filteredMovies = movies.filter(
       (movie) => genreID === "all" || movie.genre._id === genreID
     );
 
-    const paginatedMovies = paginate(filteredMovies, pageSize, currentPage);
+    const sortedMovies = _.orderBy(movies, columnSort.path, columnSort.order);
+
+    const paginatedMovies = paginate(sortedMovies, pageSize, currentPage);
 
     const total = filteredMovies.length;
 

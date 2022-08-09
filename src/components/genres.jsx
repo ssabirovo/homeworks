@@ -1,3 +1,4 @@
+
 const Genres = ({ genres = [], genreID, onSelect }) => {
   return (
     <div className='col-2'>
@@ -17,3 +18,4 @@ const Genres = ({ genres = [], genreID, onSelect }) => {
 };
 
 export default Genres;
+
