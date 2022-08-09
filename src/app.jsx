@@ -5,6 +5,8 @@ import Movies from "./components/movies";
 import Loader from "./components/loader";
 import Total from "./components/total";
 import { paginate } from "./helpers/paginate";
+import { fakeGetMovies } from "./services/fake-get-movies";
+import { fakeGetGenres } from "./services/fake-get-genres";
 
 class App extends Component {
   state = {
@@ -32,13 +34,12 @@ class App extends Component {
     this.setState({ movies });
   };
 
-  async componentDidMount() {
-    const movieRes = await fetch("http://localhost:8000/api/movies");
-    const movies = await movieRes.json();
+  componentDidMount() {
+    const movies = fakeGetMovies();
+    const genres = fakeGetGenres();
 
-    const genreRes = await fetch("http://localhost:8000/api/genres");
-    const genres = await genreRes.json();
     genres.unshift({ name: "All", _id: "all" });
+
     setTimeout(() => this.setState({ loading: false, movies, genres }), 1000);
   }
 
@@ -50,6 +51,7 @@ class App extends Component {
     const filteredMovies = movies.filter(
       (movie) => genreID === "all" || movie.genre._id === genreID
     );
+
     const paginatedMovies = paginate(filteredMovies, pageSize, currentPage);
 
     const total = filteredMovies.length;

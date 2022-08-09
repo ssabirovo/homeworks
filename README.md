@@ -4,8 +4,8 @@
 
 ## 2️⃣ Create simple projects
 
-        ✅ create fake getMovies without backend
-        ✅ create fake getGenres without backend
+        ✅ create fake getMovies without backend 👍🏻
+        ✅ create fake getGenres without backend 👍🏻
 
 ## 3️⃣ Implement sorting
 

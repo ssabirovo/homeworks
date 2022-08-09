@@ -1,6 +1,6 @@
 export const paginate = (items = [], pageSize, currentPage) => {
   const startIdx = pageSize * (currentPage - 1);
-  const endIdx = pageSize * currentPage;
+  const endIdx = startIdx + pageSize;
   return items.slice(startIdx, endIdx);
 };
 
