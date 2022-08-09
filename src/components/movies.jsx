@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import Like from "./like";
 import Pagination from "./pagination";
 
@@ -7,6 +8,7 @@ const Movies = ({
   pageSize,
   onPageChange,
   currentPage,
+  onDeleteMovie,
   total,
 }) => {
   return (
@@ -32,11 +34,15 @@ const Movies = ({
               <td>{movie.dailyRentalRate}</td>
               <td>
                 <Like
-                  isLiked={movie.isLiked}
+                  isLiked={Boolean(movie.isLiked)}
                   onLike={() => onLike(movie._id)}
                 />
                 <button className='btn btn-info btn-sm ms-2'>Edit</button>
-                <button className='btn btn-danger btn-sm ms-2'>delete</button>
+                <button
+                  className='btn btn-danger btn-sm ms-2'
+                  onClick={() => onDeleteMovie(movie._id)}>
+                  delete
+                </button>
               </td>
             </tr>
           ))}
@@ -52,4 +58,13 @@ const Movies = ({
   );
 };
 
+Movies.propTypes = {
+  movies: PropTypes.array.isRequired,
+  currentPage: PropTypes.number.isRequired,
+  pageSize: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  onDeleteMovie: PropTypes.func.isRequired,
+  onPageChange: PropTypes.func.isRequired,
+  onLike: PropTypes.func.isRequired,
+};
 export default Movies;

@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Like = ({ isLiked, onLike }) => {
   return (
     <i
@@ -9,3 +11,8 @@ const Like = ({ isLiked, onLike }) => {
 };
 
 export default Like;
+
+Like.propTypes = {
+  isLiked: PropTypes.bool.isRequired,
+  onLike: PropTypes.func.isRequired,
+};

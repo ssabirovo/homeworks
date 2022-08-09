@@ -7,6 +7,7 @@ import Total from "./components/total";
 import { paginate } from "./helpers/paginate";
 import { fakeGetMovies } from "./services/fake-get-movies";
 import { fakeGetGenres } from "./services/fake-get-genres";
+import { toast } from "react-toastify";
 
 class App extends Component {
   state = {
@@ -34,6 +35,14 @@ class App extends Component {
     this.setState({ movies });
   };
 
+  handleDeleteMovie = (movieID) => {
+    const movies = this.state.movies.filter((movie) => movie._id !== movieID);
+    this.setState({ movies });
+    toast.success(`Deleted Movie = ${movieID}`);
+    toast.error(`Deleted Movie = ${movieID}`);
+    toast.warn(`Deleted Movie = ${movieID}`);
+  };
+
   componentDidMount() {
     const movies = fakeGetMovies();
     const genres = fakeGetGenres();
@@ -55,6 +64,7 @@ class App extends Component {
     const paginatedMovies = paginate(filteredMovies, pageSize, currentPage);
 
     const total = filteredMovies.length;
+
     return (
       <>
         <NavBar />
@@ -70,10 +80,11 @@ class App extends Component {
               <Movies
                 currentPage={currentPage}
                 pageSize={pageSize}
-                onPageChange={this.handlePageChange}
-                movies={paginatedMovies}
-                onLike={this.handleLike}
                 total={total}
+                movies={paginatedMovies}
+                onDeleteMovie={this.handleDeleteMovie}
+                onPageChange={this.handlePageChange}
+                onLike={this.handleLike}
               />
             </div>
           </div>

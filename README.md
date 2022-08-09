@@ -13,9 +13,9 @@
 
 ## 4️⃣ Delete method with backend
 
-         ✅ create handleDelete method without backend
-         ✅ create loader component
-         ✅ using react-toastify
+         ✅ create handleDelete method without backend 👍🏻
+         ✅ create loader component 👍🏻
+         ✅ using react-toastify 👍🏻
 
 ## 5️⃣ Extracting table
 
