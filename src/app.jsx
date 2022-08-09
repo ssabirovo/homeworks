@@ -62,7 +62,11 @@ class App extends Component {
       (movie) => genreID === "all" || movie.genre._id === genreID
     );
 
-    const sortedMovies = _.orderBy(movies, columnSort.path, columnSort.order);
+    const sortedMovies = _.orderBy(
+      filteredMovies,
+      columnSort.path,
+      columnSort.order
+    );
 
     const paginatedMovies = paginate(sortedMovies, pageSize, currentPage);
 
