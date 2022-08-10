@@ -1,23 +1,16 @@
-# ---------- 09.08.22 ----------(134)
+# ---------- 10.09.22 ----------(135)
 
 ## 1️⃣ Checking homeworks
 
-## 2️⃣ Create simple projects
-
-        ✅ create fake getMovies without backend 👍🏻
-        ✅ create fake getGenres without backend 👍🏻
-
-## 3️⃣ Implement sorting
-
-         ✅ using _.orderBy
-
-## 4️⃣ Delete method with backend
-
-         ✅ create handleDelete method without backend 👍🏻
-         ✅ create loader component 👍🏻
-         ✅ using react-toastify 👍🏻
-
-## 5️⃣ Extracting table
+## 2️⃣ Extracting table
 
          ✅ create tableHeader component
          ✅ create tableBody component
+
+## 3️⃣ React Routing
+
+         ✅ Introduction react-router
+         ✅ Switch
+         ✅ Route
+         ✅ Link
+         ✅ Redirect
