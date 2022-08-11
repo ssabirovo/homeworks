@@ -1,16 +1,19 @@
-# ---------- 10.09.22 ----------(135)
+# ---------- 11.09.22 ----------(136)
 
 ## 1️⃣ Checking homeworks
 
-## 2️⃣ Extracting table
+## 2️⃣ Adding sort logics
+
+## 3️⃣ Extracting table
 
          ✅ create tableHeader component
          ✅ create tableBody component
 
-## 3️⃣ React Routing
+## 4️⃣ React Routing
 
-         ✅ Introduction react-router
+         ✅ Introduction react-router-dom
+         ✅ Adding Routing
          ✅ Switch
-         ✅ Route
+         ✅ Link
          ✅ Link
          ✅ Redirect
