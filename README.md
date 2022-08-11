@@ -1,4 +1,4 @@
-# ---------- 11.09.22 ----------(136)
+# ---------- 12.09.22 ----------(137)
 
 ## 1️⃣ Checking homeworks
 
@@ -9,11 +9,10 @@
          ✅ create tableHeader component
          ✅ create tableBody component
 
-## 4️⃣ React Routing
+## 4️⃣ React Routing 👍🏻
 
-         ✅ Introduction react-router-dom
-         ✅ Adding Routing
-         ✅ Switch
-         ✅ Link
-         ✅ Link
-         ✅ Redirect
+         ✅ Introduction react-router-dom 👍🏻
+         ✅ Adding Routing 👍🏻
+         ✅ Switch 👍🏻
+         ✅ Link 👍🏻
+         ✅ Redirect 👍🏻
