@@ -15,4 +15,9 @@
          ✅ Adding Routing 👍🏻
          ✅ Switch 👍🏻
          ✅ Link 👍🏻
+         ✅ Route props
+         ✅ Passing props
+         ✅ Route Parameters
+         ✅ Optional Parameters
+         ✅ Query String Parameters
          ✅ Redirect 👍🏻
