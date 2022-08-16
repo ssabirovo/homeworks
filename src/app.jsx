@@ -38,9 +38,7 @@ class App extends Component {
   handleDeleteMovie = (movieID) => {
     const movies = this.state.movies.filter((movie) => movie._id !== movieID);
     this.setState({ movies });
-    toast.success(`Deleted Movie = ${movieID}`);
     toast.error(`Deleted Movie = ${movieID}`);
-    toast.warn(`Deleted Movie = ${movieID}`);
   };
 
   componentDidMount() {
