@@ -1,8 +1,6 @@
-import NavBar from "./nav-bar";
-import Genres from "./genres";
-import Movies from "./movies";
-import Loader from "./loader";
-import Total from "./total";
-import Like from "./like";
-
-export { Total, Loader, NavBar, Movies, Genres, Like };
+export { default as NavBar } from "./nav-bar";
+export { default as Genres } from "./genres";
+export { default as MoviesTable } from "./movies-table";
+export { default as Loader } from "./loader";
+export { default as Total } from "./total";
+export { default as Like } from "./like";

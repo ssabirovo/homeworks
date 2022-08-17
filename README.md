@@ -20,13 +20,13 @@
          ✅ Redirect 👍🏻
          ✅ Route Parameters 👍🏻
          ✅ Optional Parameters 👍🏻
-         ✅ Query String Parameters
+         ✅ Query String Parameters 👍🏻
 
 ## 5️⃣ Form
 
-         ✅ Building bootstrap form (Login)
-         ✅ refs & autofocus
-         ✅ controlled elements
-         ✅ handling multiple inputs
+         ✅ Building bootstrap form (Login) 👍🏻
+         ✅ refs & autofocus 👍🏻
+         ✅ controlled elements 👍🏻
+         ✅ handling multiple inputs 
          ✅ Common errors [undefined, null]
          ✅ Extracting reuseable input

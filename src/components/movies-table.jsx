@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import Like from "./like";
 import Pagination from "./pagination";
 
-const Movies = ({
+const MoviesTable = ({
   movies = [],
   onLike,
   pageSize,
@@ -58,7 +58,7 @@ const Movies = ({
   );
 };
 
-Movies.propTypes = {
+MoviesTable.propTypes = {
   movies: PropTypes.array.isRequired,
   currentPage: PropTypes.number.isRequired,
   pageSize: PropTypes.number.isRequired,
@@ -67,4 +67,4 @@ Movies.propTypes = {
   onPageChange: PropTypes.func.isRequired,
   onLike: PropTypes.func.isRequired,
 };
-export default Movies;
+export default MoviesTable;

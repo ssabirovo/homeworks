@@ -7,6 +7,13 @@
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
+body {
+  height: 100vh;
+}
 .pagination li {
   cursor: pointer;
+}
+
+.wrapper {
+  height: 100vh;
 }
