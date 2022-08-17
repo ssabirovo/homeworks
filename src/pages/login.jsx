@@ -4,14 +4,20 @@ class Login extends Component {
   state = {
     disabled: false,
     data: {
-      email: "",
+      email: "afaf",
       password: "",
       age: 0,
-      username: "",
+      username: "afafafsfgdhd",
       lastName: "",
     },
   };
+  handleChange = (e, inputIdx) => {
+    let temp = Object.entries(this.state.data);
 
+    console.log(temp);
+    // console.log(inputIdx, "=", e.target.value);
+    this.setState({ data: temp });
+  };
   handleSubmit = (e) => {
     e.preventDefault();
     this.setState({ disabled: true });
@@ -24,48 +30,27 @@ class Login extends Component {
   };
 
   render() {
-    const { disabled } = this.state;
+    const { disabled, data } = this.state;
+    let mapArr = new Array(Object.keys(this.state.data).length).fill("");
+    let obj = Object.keys(this.state.data);
     return (
       <>
         <h1>Login Form</h1>
         <form onSubmit={this.handleSubmit}>
-          <div className='form-group my-2'>
-            <label htmlFor='email'>Email</label>
-            <input
-              ref={this.email}
-              className='form-control'
-              type='email'
-              id='email'
-              placeholder='Enter Email'
-              value={this.state.email}
-              onChange={this.handleChange}
-            />
-          </div>
-          <div className='form-group my-2'>
-            <label htmlFor='age'>Age</label>
-            <input
-              ref={this.email}
-              className='form-control'
-              type='number'
-              id='age'
-              placeholder='Enter Email'
-              value={this.state.age}
-              onChange={this.handleChange}
-            />
-          </div>
-          <div className='form-group my-2'>
-            <label htmlFor='password'>Password</label>
-            <input
-              ref={this.password}
-              className='form-control'
-              type='password'
-              id='password'
-              placeholder='Enter Password'
-              value={this.state.password}
-              onChange={(e) => this.setState({ password: e.target.value })}
-            />
-          </div>
-          <button className='btn btn-primary' disabled={disabled}>
+          {mapArr.map((item, idx) => (
+            <div key={idx} className="form-group my-2">
+              <label htmlFor={obj[idx]}>{obj[idx]}</label>
+              <input
+                className="form-control"
+                // type="password"
+                id="password"
+                placeholder={`Enter ${obj[idx]}`}
+                onChange={(e) => this.handleChange(e, idx)}
+              />
+            </div>
+          ))}
+
+          <button className="btn btn-primary" disabled={disabled}>
             Login
           </button>
         </form>
